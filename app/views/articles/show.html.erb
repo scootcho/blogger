@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <h1><%= @article.title %></h1>
 <p>
   Tags:
@@ -22,3 +23,4 @@
 <%= render partial: 'comments/form' %>
 
 <%= link_to "<< Back to Articles List", articles_path %>
+<% end %>
